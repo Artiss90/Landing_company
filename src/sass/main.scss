@@ -1,1 +1,16 @@
+// Переменные
+@import "./utils/variables";
 
+// глобальные стили
+@import "./utils/base";
+@import "./components/body";
+
+// Повторяющиеся компоненты
+
+// Шапка страницы
+@import "./components/header";
+@import "./utils/menu-button";
+
+// Уникальная часть страницы
+
+// Подвал

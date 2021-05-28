@@ -1,0 +1,6 @@
+.body-page {
+  max-width: 375px;
+  @media screen and (min-width: 1920px) {
+    max-width: 1920px;
+  }
+}
