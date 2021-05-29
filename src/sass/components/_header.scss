@@ -64,11 +64,25 @@
     font-weight: 400;
     line-height: 120%;
 
-    & .list-nav {
+    & .item-nav {
       margin-right: 66px;
+      &:last-child {
+        margin-right: 0;
+      }
     }
-    & .list-nav:last-child {
-      margin-right: 0;
+    & .link-nav {
+      position: relative;
+    }
+    & .link-nav:hover:after,
+    .link-nav:focus-within:after {
+      content: "";
+      display: block;
+      margin-top: 2px;
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background: black;
+      border-radius: 2px;
     }
   }
 }
@@ -91,9 +105,18 @@
 
     font-weight: 500;
     line-height: 16px;
+    &:hover,
+    :focus-within {
+      background: rgba(72, 142, 170, 0.15);
+    }
   }
   & .reverse-button {
-    filter: invert(1);
+    color: white;
+    background: black;
+    &:hover,
+    :focus-within {
+      background: rgba(102, 95, 95, 1);
+    }
   }
 }
 

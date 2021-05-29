@@ -43,6 +43,9 @@
     line-height: $line-height;
     @media screen and(min-width: $viewport-desktop) {
       padding: 33px 16px;
+      border-radius: 10px;
+      border: 1px solid #665f5f;
+      background: white;
 
       font-family: Roboto;
       font-size: 24px;
@@ -53,5 +56,8 @@
   & .button-specialization:hover,
   .button-specialization:focus-within {
     background: linear-gradient(22.4deg, #54478e, #2579a8);
+    @media screen and(min-width: $viewport-desktop) {
+      background: rgba(72, 142, 170, 0.15);
+    }
   }
 }

@@ -43,6 +43,10 @@
       padding: 21px 65px;
       line-height: 16px;
     }
+    &:hover,
+    :focus-within {
+      background: #e8878b;
+    }
   }
 }
 
