@@ -2,6 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 90px;
+  @media screen and (min-width: $viewport-desktop) {
+    padding-right: 38px;
+    margin-bottom: 239px;
+  }
 
   & .title-partners {
     margin-bottom: 32px;
@@ -9,13 +13,49 @@
     font-size: 32px;
     font-weight: 600;
     line-height: 38px;
+    @media screen and (min-width: $viewport-desktop) {
+      display: none;
+    }
+  }
+  & .title-companies {
+    display: none;
+    @media screen and (min-width: $viewport-desktop) {
+      display: block;
+      margin-bottom: 97px;
+      width: 100%;
+      font-family: Inter;
+      font-size: 56px;
+      font-weight: 600;
+      line-height: 120%;
+      text-align: center;
+    }
   }
   & .item-partners {
     margin-right: 36px;
     margin-bottom: 24px;
+    @media screen and (min-width: $viewport-desktop) {
+      position: relative;
+      margin-right: 92px;
+      margin-bottom: 113px;
+      background: $background;
+      fill: gray;
+      --color1: gray;
+      --color2: gray;
+      --color3: gray;
+      --color4: gray;
+      --color5: gray;
+      --color6: gray;
+      --color7: gray;
+      --color8: gray;
+      --color9: gray;
+      --color10: gray;
+    }
   }
-  & .item-partners:nth-child(3n + 1) {
-    margin-right: 0px;
+  // ? здесь задана максимальная величина
+  @media screen and (max-width: $pre-viewport-desktop) {
+    & .item-partners:nth-child(3n + 2) {
+      margin-right: 0px;
+    }
   }
   & .icon-partners {
     width: 90px;
@@ -23,5 +63,46 @@
     padding: 16px;
     background-image: url("./../images/jpg/bg_partners.jpg");
     box-shadow: 0px 1px 12px 0px rgba(228, 228, 234, 0.6);
+    @media screen and (min-width: $viewport-desktop) {
+      width: 200px;
+      height: 200px;
+      padding: 30px;
+      background-image: inherit;
+    }
+  }
+  & .item-partners:hover,
+  .item-partners:focus-within {
+    fill: inherit;
+    --color1: inherit;
+    --color2: inherit;
+    --color3: inherit;
+    --color4: inherit;
+    --color5: inherit;
+    --color6: inherit;
+    --color7: inherit;
+    --color8: inherit;
+    --color9: inherit;
+    --color10: inherit;
+    background-image: (url("./../images/jpg/bg_partners.jpg"));
+  }
+  .name-partners {
+    display: none;
+    @media screen and (min-width: $viewport-desktop) {
+      display: inline-block;
+      position: absolute;
+      top: 90%;
+      left: 0;
+      right: 0;
+      transition: transform 500ms linear;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 120%;
+
+      &:hover,
+      :focus-within {
+        transform: translateY(50px);
+      }
+    }
   }
 }
