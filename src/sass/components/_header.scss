@@ -1,3 +1,20 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  margin-bottom: 64px;
+}
+
+.mobile-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
 .icon-logo {
   fill: rgba(147, 41, 30, 1);
   width: 73px;
