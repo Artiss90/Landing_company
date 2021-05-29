@@ -1,21 +1,35 @@
 .hero {
+  margin-top: 64px;
   margin-bottom: 80px;
+  @media screen and (min-width: $viewport-desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 145px;
+    margin-bottom: 157px;
+  }
+
   & .heading-hero {
-    margin-top: 64px;
     margin-bottom: 24px;
     font-size: 32px;
     font-weight: 600;
-    line-height: 35.2px;
+    line-height: 110%;
+    @media screen and (min-width: $viewport-desktop) {
+      margin-bottom: 32px;
+      font-size: 56px;
+    }
   }
   & .text-hero {
     margin-bottom: 32px;
     font-weight: 400;
     line-height: 120%;
+    @media screen and (min-width: $viewport-desktop) {
+      margin-bottom: 48px;
+      font-size: 24px;
+    }
   }
   & .button-hero {
-    width: 174px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 14px 54px;
     margin-bottom: 48px;
 
     font-size: 16px;
@@ -24,5 +38,18 @@
 
     background: $accent;
     border-radius: 5px;
+
+    @media screen and (min-width: $viewport-desktop) {
+      padding: 21px 65px;
+      line-height: 16px;
+    }
+  }
+}
+
+.presentation {
+  border-radius: 15px;
+  @media screen and (min-width: $viewport-desktop) {
+    width: 880px;
+    height: auto;
   }
 }
