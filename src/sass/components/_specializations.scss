@@ -1,0 +1,42 @@
+.list-specializations {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  & .title-specializations {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: $line-height;
+    margin-bottom: 24px;
+  }
+  & .item-specializations {
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
+  & .item-specializations:nth-child(2n + 1) {
+    margin-right: 0px;
+  }
+  & .item-specializations:last-child {
+    margin-bottom: 0px;
+  }
+  & .button-specialization {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 14px;
+    padding-left: 14px;
+
+    background: linear-gradient(22.4deg, #1cace3, #36378d);
+    border-radius: 5px;
+    border-image: linear-gradient(22.4deg, #54478e, #2579a8);
+    border-style: none;
+    // border-color: inherit;
+    //   linear-gradient(22.4deg, #54478e -94.6%, #2579a8 233.94%);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: $line-height;
+  }
+  & .button-specialization:hover,
+  .button-specialization:focus-within {
+    background: linear-gradient(22.4deg, #54478e, #2579a8);
+  }
+}
