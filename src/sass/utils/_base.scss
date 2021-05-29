@@ -52,6 +52,10 @@ a {
   transition: $function-of-time $transition-duration;
 }
 
+button {
+  border-style: none;
+}
+
 .hidden {
   position: absolute;
   width: 1px;
