@@ -1,6 +1,8 @@
 .body-page {
   max-width: 375px;
-  @media screen and (min-width: 1920px) {
+  background: $background;
+  @media screen and (min-width: $viewport-desktop) {
+    // width: 100%;
     max-width: 1920px;
   }
 }

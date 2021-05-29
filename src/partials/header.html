@@ -1,5 +1,5 @@
 <!-- Шапка страницы -->
-<header class="header-page container">
+<header class="header-page">
     <div class="header">
         <div class="mobile-header">
          <span>9:41</span>
@@ -18,7 +18,17 @@
                 <use class="icon-cross" href="./images/sprite.svg#icon-cancel-circle"></use>
             </svg>
         </button>
-    </div>
-    <div class="menu-container is-open" id="menu-container" data-menu>
+        <div class="menu-container is-open" id="menu-container" data-menu>
+        </div>
+
+        <!-- for desktop -->
+        <ul class="nav"><h3 class="hidden">Navigations</h3>
+            <li class="list-nav"><a href="">Employers</a></li>
+            <li class="list-nav"><a href="">Technology professionals</a></li>
+            <li class="list-nav"><a href="">About Us</a></li>
+        </ul>
+
+        <ul class="list-auth"><li class="item-auth"><button class="button-auth">SIGN IN</button></li>
+        <li class="item-auth"><button class="button-auth reverse-button">SIGN UP</button></li></ul>
     </div>
 </header>
