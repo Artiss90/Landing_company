@@ -97,6 +97,7 @@
   width: 343px;
   height: 321px;
   border-radius: 16px;
+  transition: opacity 500ms linear;
   @media screen and (min-width: $viewport-desktop) {
     width: 480px;
     margin-bottom: 0;
