@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html",
+    "build": "parcel build --no-minify src/*.html",
     "predeploy": "npm run build -- --public-url=/parcel-project-template/",
     "deploy": "gh-pages -d dist"
   },
@@ -24,5 +24,8 @@
     "parcel-bundler": "^1.12.4",
     "posthtml-include": "^1.4.3",
     "sass": "^1.26.9"
+  },
+  "dependencies": {
+    "htmlnano": "^0.2.9"
   }
 }
