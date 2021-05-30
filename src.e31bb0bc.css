@@ -542,6 +542,7 @@ button {
   }
 }
 .list-text-benefit .item-benefit {
+  position: relative;
   margin-bottom: 16px;
   margin-left: 15px;
   list-style: disc;
@@ -671,15 +672,41 @@ button {
 }
 
 @media screen and (min-width: 1440px) {
+  .line {
+    position: absolute;
+    bottom: -16px;
+    left: 1%;
+    width: 70%;
+    height: 40px;
+    border-image-source: linear-gradient(90deg, #665f5f 79.76%, rgba(102, 95, 95, 0.3) 100%);
+    border-image-slice: 1;
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid transparent;
+    transform: skew(-45deg);
+    border-radius: 2px;
+  }
   .line::after {
     content: "";
     display: block;
-    margin-top: 10px;
     position: absolute;
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(to right, #665f5f, rgba(102, 95, 95, 0));
-    border-radius: 2px;
+    right: -20%;
+    width: 20%;
+    border-image-source: linear-gradient(90deg, rgba(102, 95, 95, 0.3), rgba(102, 95, 95, 0) 100%);
+    border-image-slice: 1;
+    border-bottom: 2px solid transparent;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .length-line-large {
+    width: 65%;
+  }
+
+  .length-line-medium {
+    width: 60%;
+  }
+
+  .length-line-small {
+    width: 55%;
   }
 }
 .blue-cub {
