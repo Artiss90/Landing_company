@@ -184,7 +184,16 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./..\\images\\jpg\\bg_partners.jpg":[["bg_partners.fa99ba6f.jpg","images/jpg/bg_partners.jpg"],"images/jpg/bg_partners.jpg"],"./..\\images\\jpg\\The-Right-Fit.jpg":[["The-Right-Fit.29940ed1.jpg","images/jpg/The-Right-Fit.jpg"],"images/jpg/The-Right-Fit.jpg"],"./..\\images\\jpg\\handshake-close-up-of-executives.jpg":[["handshake-close-up-of-executives.8067cd93.jpg","images/jpg/handshake-close-up-of-executives.jpg"],"images/jpg/handshake-close-up-of-executives.jpg"],"./..\\images\\jpg\\campaign-creators-gMsnXqILjp4-unsplash.jpg":[["campaign-creators-gMsnXqILjp4-unsplash.de1e03c4.jpg","images/jpg/campaign-creators-gMsnXqILjp4-unsplash.jpg"],"images/jpg/campaign-creators-gMsnXqILjp4-unsplash.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+"use strict";
+
+require("./sass/main.scss");
+},{"./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -212,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63222" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52216" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -388,5 +397,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/index.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+//# sourceMappingURL=/src.e31bb0bc.js.map
