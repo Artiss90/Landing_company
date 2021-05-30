@@ -1,0 +1,34 @@
+<!-- Шапка страницы -->
+<header class="header-page">
+    <div class="header">
+        <div class="mobile-header">
+         <span>9:41</span>
+         <svg width="67px" height="12px">
+             <use href="./images/sprite.svg#icon-Symbolmobile-func"></use>
+         </svg>   
+        </div>
+        <a class="logo" href="#" aria-label="Логотип">
+            <img src="./images/Logo.svg"/>
+        </a>
+        <!-- Бургер для мобилок -->
+        <button class="menu-button" type="button" data-menu-button>
+            <svg class="icon" width="32px" height="32px" aria-expanded="false" aria-controls="menu-container is-open"
+                aria-label="переключатель мобильного меню">
+                <use class="icon-menu" href="./images/sprite.svg#icon-Burger"></use>
+                <use class="icon-cross" href="./images/sprite.svg#icon-cancel-circle"></use>
+            </svg>
+        </button>
+        <div class="menu-container is-open" id="menu-container" data-menu>
+        </div>
+
+        <!-- for desktop -->
+        <ul class="nav"><h3 class="hidden">Navigations</h3>
+            <li class="item-nav"><a href="" class="link-nav">Employers</a></li>
+            <li class="item-nav"><a href="" class="link-nav">Technology professionals</a></li>
+            <li class="item-nav"><a href="" class="link-nav">About Us</a></li>
+        </ul>
+
+        <ul class="list-auth"><li class="item-auth"><button class="button-auth">SIGN IN</button></li>
+        <li class="item-auth"><button class="button-auth reverse-button">SIGN UP</button></li></ul>
+    </div>
+</header>
