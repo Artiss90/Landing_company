@@ -78,7 +78,7 @@ button {
 .body-page {
   overflow-x: hidden;
   max-width: 375px;
-  background: #e5e5e5;
+  background: #ffffff;
 }
 @media screen and (min-width: 1440px) {
   .body-page {
@@ -372,10 +372,11 @@ button {
 @media screen and (min-width: 1440px) {
   .list-partners .item-partners {
     position: relative;
+    height: 200px;
     margin-right: 92px;
     margin-bottom: 113px;
     border-radius: 10px;
-    background: #e5e5e5;
+    transition: all 500ms linear;
     fill: gray;
     --color1: gray;
     --color2: gray;
@@ -399,7 +400,6 @@ button {
   height: 90px;
   padding: 16px;
   background-image: url("/bg_partners.fa99ba6f.jpg");
-  box-shadow: 0px 1px 12px 0px rgba(228, 228, 234, 0.6);
 }
 @media screen and (min-width: 1440px) {
   .list-partners .icon-partners {
@@ -409,8 +409,7 @@ button {
     background-image: inherit;
   }
 }
-.list-partners .item-partners:hover,
-.list-partners .item-partners:focus-within {
+.list-partners .item-partners:hover, .list-partners .item-partners:focus-within {
   fill: inherit;
   --color1: inherit;
   --color2: inherit;
@@ -424,6 +423,9 @@ button {
   --color10: inherit;
   background-image: url("/bg_partners.fa99ba6f.jpg");
   box-shadow: 6px 6px 12px rgba(228, 228, 234, 0.65);
+}
+.list-partners .item-partners:hover .name-partners, .list-partners .item-partners:focus-within .name-partners {
+  transform: translateY(50px);
 }
 .list-partners .name-partners {
   display: none;
@@ -440,10 +442,6 @@ button {
     font-size: 24px;
     font-weight: 400;
     line-height: 120%;
-  }
-  .list-partners .name-partners:hover,
-.list-partners .name-partners :focus-within {
-    transform: translateY(50px);
   }
 }
 
@@ -709,114 +707,6 @@ button {
     width: 55%;
   }
 }
-.blue-cub {
-  display: none;
-}
-@media screen and (min-width: 1440px) {
-  .blue-cub {
-    display: block;
-    position: absolute;
-    width: 363px;
-    height: 363px;
-    background: linear-gradient(134.02deg, #1fabe3 1.13%, #36358c 77.67%);
-    border-radius: 12px;
-    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
-    transform: rotate(29.82deg);
-    left: -11%;
-    top: 158%;
-  }
-}
-
-.fiole-cub {
-  display: none;
-}
-@media screen and (min-width: 1440px) {
-  .fiole-cub {
-    display: block;
-    position: absolute;
-    width: 245px;
-    height: 245px;
-    background: linear-gradient(135deg, #5659c5 1.15%, #420181 100.07%);
-    border-radius: 12px;
-    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
-    transform: rotate(146.26deg);
-    right: -15%;
-    top: 82%;
-  }
-}
-
-.green-cub {
-  display: none;
-}
-@media screen and (min-width: 1440px) {
-  .green-cub {
-    display: block;
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    background: linear-gradient(135deg, #109f52 1.15%, #373489 100.07%);
-    border-radius: 12px;
-    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
-    transform: rotate(145.62deg);
-    left: -15%;
-    top: 73%;
-  }
-}
-
-.bordo-cub {
-  display: none;
-}
-@media screen and (min-width: 1440px) {
-  .bordo-cub {
-    display: block;
-    position: absolute;
-    width: 363px;
-    height: 363px;
-    background: linear-gradient(135deg, #bc547c 1.15%, #8b216a 100.07%);
-    border-radius: 12px;
-    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
-    transform: rotate(27.05deg);
-    right: -32%;
-    top: 213%;
-  }
-}
-
-.laim-cub {
-  display: none;
-}
-@media screen and (min-width: 1440px) {
-  .laim-cub {
-    display: block;
-    position: absolute;
-    width: 363px;
-    height: 363px;
-    background: linear-gradient(135deg, #bfcb20 1.15%, #09a64d 100.07%);
-    border-radius: 12px;
-    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
-    transform: rotate(27.05deg);
-    right: -23%;
-    top: 244%;
-  }
-}
-
-.red-cub {
-  display: none;
-}
-@media screen and (min-width: 1440px) {
-  .red-cub {
-    display: block;
-    position: absolute;
-    width: 363px;
-    height: 363px;
-    background: linear-gradient(227.21deg, #93291e -68.17%, #ed213a 80.38%), linear-gradient(135deg, #f7af04 1.15%, #d05b0b 100.07%);
-    border-radius: 12px;
-    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
-    transform: rotate(29.82deg);
-    left: -21%;
-    top: 189%;
-  }
-}
-
 .footer {
   display: flex;
   flex-direction: column;
